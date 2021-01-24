@@ -1,0 +1,14 @@
+Defina o que é :
+1) Dado:
+os dados são expressões gerais que descrevem características das entidades sobre as quais operam os algoritmos. 
+Estas expressões devem ser apresentadas de maneira a que possam ser tratadas por um computador.
+
+2) Informação:
+Junção dos dados processados pelo computador.
+
+3) Arquivo Convencional:
+Sistemas de arquivos convencionais são capazes de comprimir arquivos, enquanto ainda existe a possibilidade que 
+aplicativos acessem dados.
+
+4) Banco de dados:
+Coleção de dados representando informações sobre um domínio específico.
