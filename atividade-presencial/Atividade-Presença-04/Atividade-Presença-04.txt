@@ -1,0 +1,24 @@
+Defina os seguintes conceitos centrais da abordagem ER:
+
+1) Entidade;
+Algo que pode ser definido e pode armazenar dados sobre ele - como pessoas, objetos, conceitos ou eventos. Trate entidades como substantivos.
+
+2) Relacionamento;
+Como as entidades influenciam ou se relacionam umas com as outras.
+
+3) Propriedades
+Os atributos ou características de uma entidade são geralmente representados por uma elipse ou um círculo.
+
+4) Domínio de atributo:
+Para cada atributo, existe um conjunto de valores permitidos, chamados domínios.
+
+5) Generalização / especialização;
+Por meio desse conceito, atributos específicos podem ser atribuídos a uma entidade geral ou a uma ocorrência (especial) 
+de um subconjunto da entidade pai. Entidade generalizada.
+
+6) Entidade Associativa
+As entidades associativas são o resultados de relacionamentos m:m. Em geral, as entidades associativas são encontradas entre entidades tipo. 
+Muitas das vezes, as entidades associativas têm nomes óbvios, pois ocorrem no mundo real. 
+
+7)Cardinalidade:
+A Cardinalidade indica quantas ocorrências de uma Entidade participam no mínimo e no máxima do relacionamento.
