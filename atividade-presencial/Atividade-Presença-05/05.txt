@@ -1,0 +1,21 @@
+Quanto a cardinalidade que define um relacionamento, pede-se:
+
+a) Exemplifique e conceitue Cardinalidade Máxima e Cardinalidade Mínima;
+a cardinalidade mínima refere-se ao número mínimo de ocorrências de uma entidade que podem ser associadas a outra entidade. 
+Exemplo: imagine um funcionário e um departamento. Um funcionário pode estar associado a pelo menos um departamento e exige 
+que ele esteja em um departamento. Também existe uma base mínima de 0. A cardinalidade máxima se refere ao número máximo de 
+instâncias de entidade que podem ser associadas a outras instâncias de entidade. Exemplo: No relacionamento entre um cliente e 
+um pedido, um cliente pode ter vários pedidos, no máximo, porque ele não precisa necessariamente de um
+limite. Também existe uma base máxima de 1, que é o caso dos pedidos, que podem ser associados a até 1 cliente.
+
+b) Explique um exemplo de uma cardinalidade 1:1;
+Relacionamento entre marido e mulher: um marido só pode estar associado a um
+Esposa, sua esposa não pode ser mais do que uma. Da mesma forma, uma esposa
+Isso só pode ser relacionado ao marido.
+
+c) Explique um exemplo de uma cardinalidade 1:n;
+A associação entre o cliente e o pedido. Um cliente pode ter vários pedidos (n
+Pedido), mas o pedido só pode pertencer a um cliente.
+
+d) Explique um exemplo de uma cardinalidade n:n.
+Temos a entidades Medico e Paciente, onde possuem cardilidade n:n, em seu relacionamento de Consulta.
