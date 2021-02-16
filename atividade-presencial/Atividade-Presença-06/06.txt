@@ -1,0 +1,20 @@
+Uma Entidade Associativa ocorre em relacionamentos n:n. Pede-se:
+
+a) Demonstre uma Entidade Associativa e descreva seus atributos.
+Temos a relação entre aluno e disciplina.
+
+Temos um relacionamento entre funcionario e empresa.
+
+criamos assim uma entidade chamada FUNCIONARIO_EMPRESA.
+
+Tendo os atributos;
+
+ID_funcionario //essa é a chave estrangeira relacionada com a chave primária de funcionario
+
+ID_empresa //esta chave estrangeira relacionada com a chave primária de empresa
+
+setor //o setor de cada funcionario na empresa
+
+carga_horaria //indicando o tempo de trabalho de cada funcionario
+
+Então, a chave primária seria formada pelos atributos IR_funcionario e ID_empresa.
