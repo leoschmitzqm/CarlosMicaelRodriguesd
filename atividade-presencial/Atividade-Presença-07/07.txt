@@ -1,0 +1,4 @@
+Explique a seguinte afirmação: "Um Modelo de refletir o seu aspecto temporal".
+
+O modelo de banco de dados que apenas armazena informações atuais é diferente do modelo 
+que apresenta informações históricas, nestes casos, deve-se considerar o aspecto temporal.
