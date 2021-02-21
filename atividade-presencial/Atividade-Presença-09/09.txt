@@ -1,0 +1,38 @@
+Defina uma Tabela e exemplifique o uso de comando SQL que executam operações CRUD.
+
+
+Defiindo uma tabela:
+
+CREATE TABLE "medico" (
+"ID" INTEGER NOT NULL,
+"nome" varchar(50) NOT NULL,
+"especialidade" varchar(20) NOT NULL,
+PRIMARY KEY("ID" AUTOINCREMENT)
+)
+
+--------------------------------------------------------------------------
+
+Adicionando dados na tabela (Create)
+
+INSERT INTO medico (nome, especialidade) VALUES
+("Carlos Chagas", "Infectologista"),
+("Maurice Wilkins", "Fisiologista"),
+("Gerty Cori", "Bioquímica");
+
+--------------------------------------------------------------------------
+
+Lendo elementos da tabela (Read)
+
+SELECT * FROM medico;
+
+--------------------------------------------------------------------------
+
+Atualizando dados (Update)
+
+UPDATE aluno set medico = "Maurice Wilkins" where ID = 2;
+
+---------------------------------------------------------------------------
+
+Deletando valores (Delete)
+
+DELETE FROM medico WHERE ID = 3;
