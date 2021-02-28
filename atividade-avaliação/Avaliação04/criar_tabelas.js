@@ -1,29 +1,24 @@
 const sqlite3 = require('sqlite3');
 
-const db = new sqlite3.Database('.atividade-avaliação/Avaliação04/DB_PESSOAL_RH.db', (error) => {
-    if (error) console.log(error);
+const db = new sqlite3.Database('./atividade-avaliação/Avaliação04', (error) => {
+if (error) console.log(error);
 });
 
 db.serialize(() => {
-    db.run('create table if not exists TB_PESSOAS (id integer primary key autoincrement , name text)', (error) => {
-        if (error) console.log(error);
-    });
+db.run('create table if not exists TB_ALUNOS (id integer primary key autoincrement , NOME_ALUNO text)', (error) => {
+if (error) console.log(error);
+});
+});
 
-    db.run('insert into TB_PESSOAS (name) values (?)', ['João Alves Damasceno'], (error) => {
-        if (error) console.log(error);
-    });
+db.serialize(() => {
+db.run('create table if not exists TB_DISCIPLINAs (id integer primary key autoincrement , NOME_DISCIPLINA text)', (error) => {
+if (error) console.log(error);
+});
 
-    db.run('insert into TB_PESSOAS (name) values (?)', ['José Nascimento Silva'], (error) => {
-        if (error) console.log(error);
-    });
+});
 
-    db.run('insert into TB_PESSOAS (name) values (?)', ['Maria Antonieta Braga'], (error) => {
-        if (error) console.log(error);
-    });
-    
-    console.log("TB_PESSOAS")
-
-    db.all('select * from TB_PESSOAS', (error, rows) => {
-        console.log(error, rows);
-    });
+db.serialize(() => {
+db.run('create table if not exists TB_ALUNO_DISCIPLINA (Periodo integer, Nota real, TB_ALUNOS_ID integer not null, TB_DISCIPLINAS_ID integer not null, FOREIGN KEY (TB_ALUNOS_ID) REFERENCES TB_ALUNOS (ID), FOREIGN KEY (TB_DISCIPLINAS_ID) REFERENCES TB_DISCIPLINAS(ID), PRIMARY KEY (TB_ALUNOS_ID,TB_DISCIPLINAs_ID))', (error) => {
+if (error) console.log(error);
+});
 });
