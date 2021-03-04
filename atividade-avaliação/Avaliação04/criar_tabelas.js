@@ -1,6 +1,6 @@
 const sqlite3 = require('sqlite3');
 
-const db = new sqlite3.Database('./atividade-avaliação/Avaliação04', (error) => {
+const db = new sqlite3.Database('./atividade-avaliação/Avaliação04.db', (error) => {
 if (error) console.log(error);
 });
 
